@@ -1,0 +1,105 @@
+.hero-flex-wrap {
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 6rem;
+}
+.hero-flex-wrap > div {
+    width: 100%;
+}
+.hero-flex-wrap .link-leader {
+    bottom: 2.5rem;
+}
+.hero-flex-wrap .wrapper {
+    padding: 0 2rem 8rem;
+}
+.hero-wrap {
+    position: relative;
+    background-size: cover;
+    background-position: center 0;
+    min-height: 100vh;
+    margin-top: 0;
+    background-image: url('../../images/b&g/hero_z8iyod_ar_4_3,c_fill__c_scale,w_750.jpg');
+}
+@media (min-width: 468px) {
+    .hero-wrap {
+        background-image: url('../../images/b&g/hero_z8iyod_ar_4_3,c_fill__c_scale,w_1302.jpg');
+   }
+}
+@media (min-width: 960px) {
+    .hero-wrap {
+        background-image: url('../../images/b&g/hero_z8iyod_ar_16_9,c_fill__c_scale,w_1870.jpg');
+   }
+}
+.hero-wrap--review {
+    background-image: url('../../images/b&g/Gillian_Barry335_chfc4u_c_scale,w_712.jpg');
+}
+@media (min-width: 1200px) {
+    .hero-wrap--review {
+        background-image: url('../../images/b&g/Gillian_Barry335_chfc4u_c_scale,w_1400.jpg');
+   }
+}
+.hero-wrap--poem {
+    background-image: url('../../images/b&g/Gillian_Barry355_lpvpfw_c_scale,w_498.jpg');
+}
+@media (min-width: 468px) {
+    .hero-wrap--poem {
+        background-image: url('../../images/b&g/Gillian_Barry355_lpvpfw_c_scale,w_717.jpg');
+   }
+}
+@media (min-width: 960px) {
+    .hero-wrap--poem {
+        background-image: url('../../images/b&g/Gillian_Barry355_lpvpfw_c_scale,w_913.jpg');
+   }
+}
+@media (min-width: 1200px) {
+    .hero-wrap--poem {
+        background-image: url('../../images/b&g/Gillian_Barry355_lpvpfw_c_scale,w_1400.jpg');
+   }
+}
+.hero-wrap .bg-tint {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(59, 70, 84, 0.75);
+}
+.hero-wrap .link-leader a:hover {
+    color: #f8f8ff;
+}
+.hero {
+    background: rgba(248, 248, 255, 0.65);
+    color: #3b4654;
+    margin: auto;
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    width: 90%;
+    transition: opacity 3s;
+    max-width: 500px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.hero__cta {
+    width: 100%;
+    margin-top: 1rem;
+}
+.hero__txt {
+    display: block;
+    text-align: center;
+    letter-spacing: -1px;
+    width: 100%;
+}
+.hero__txt--sm {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.hero__txt--lrg {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}

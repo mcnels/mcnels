@@ -1,0 +1,187 @@
+.cd-container {
+    margin: 10rem auto;
+}
+.cd-date {
+    display: block;
+    float: none;
+    width: 100%;
+}
+.cd-container {
+    position: relative;
+}
+.cd-container::before {
+    content: ' ';
+    width: 20px;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 28px;
+    background: #3b4654;
+}
+@media screen and (min-width: 680px) {
+    .cd-container::before {
+        left: 50%;
+        margin-left: -10px;
+   }
+}
+.cd-container::after {
+    content: ' ';
+    width: 20px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 28px;
+    background: #3b4654;
+}
+@media screen and (min-width: 680px) {
+    .cd-container::after {
+        left: 50%;
+        margin-left: -10px;
+   }
+}
+.cd-timeline {
+    position: relative;
+    padding: 2rem 0 4rem;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+@media screen and (min-width: 680px) {
+    .cd-timeline {
+        margin: 3rem auto;
+   }
+}
+.cd-timeline::before {
+   /* this is the vertical line */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 37px;
+    height: 100%;
+    width: 4px;
+    background: #3b4654;
+}
+@media screen and (min-width: 680px) {
+    .cd-timeline::before {
+        left: 50%;
+        margin-left: -2px;
+   }
+}
+.cd-timeline-block {
+    position: relative;
+    margin: 2em 1em 2em 3em;
+    opacity: 0;
+}
+@media screen and (min-width: 680px) {
+    .cd-timeline-block {
+        margin: 20rem 0;
+   }
+    .cd-timeline-block:first-child {
+        margin-top: 0;
+   }
+    .cd-timeline-block:last-child {
+        margin-bottom: 0;
+   }
+}
+.cd-timeline-block:first-child {
+    margin-top: 0;
+}
+.cd-timeline-block:last-child {
+    margin-bottom: 0;
+}
+.cd-timeline-img {
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #3b4654;
+}
+@media screen and (min-width: 680px) {
+    .cd-timeline-img {
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        margin-left: -50px;
+       /* Force Hardware Acceleration in WebKit */
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+   }
+    .cssanimations .cd-timeline-img.is-hidden {
+        visibility: hidden;
+   }
+    .cssanimations .cd-timeline-img.bounce-in {
+        visibility: visible;
+        animation: cd-bounce-1 0.6s;
+   }
+}
+.cd-timeline-img img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -24px;
+    margin-top: -24px;
+}
+.cd-timeline-content {
+    position: relative;
+    margin-left: 60px;
+    padding: 1em 0;
+    text-align: center;
+}
+@media screen and (min-width: 680px) {
+    .cd-timeline-content {
+        margin-left: 0;
+        padding: 0 0 0 1.5em;
+        width: 45%;
+   }
+    .cd-timeline-content::before {
+        top: 24px;
+        left: 100%;
+        border-color: transparent;
+   }
+    .cd-timeline-content:nth-child(2) {
+        padding: 0 2rem 0 0;
+   }
+    .cd-timeline-content .cd-date {
+        position: absolute;
+        width: 100%;
+        left: 130%;
+        top: 0;
+   }
+    .cd-timeline-block:nth-child(even) .cd-timeline-content {
+        float: right;
+        padding: 0 0 0 3rem;
+   }
+    .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+        top: 24px;
+        left: auto;
+        right: 100%;
+        border-color: transparent;
+   }
+    .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+        left: auto;
+        right: 130%;
+        text-align: centre;
+   }
+    .cssanimations .cd-timeline-content.is-hidden {
+        visibility: hidden;
+   }
+    .cssanimations .cd-timeline-content.bounce-in {
+        visibility: visible;
+        animation: cd-bounce-2 0.6s;
+   }
+}
+.cd-timeline-content .cd-date {
+    float: left;
+    padding: 0 0 0.8em;
+    opacity: 0.7;
+}
+@media screen and (min-width: 680px) {
+   /* inverse bounce effect on even content blocks */
+    .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
+        animation: cd-bounce-2-inverse 0.6s;
+   }
+}

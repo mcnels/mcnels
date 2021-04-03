@@ -1,0 +1,11 @@
+.overview-list {
+    list-style: none;
+    padding: 0;
+    margin: 3rem 0;
+}
+.overview-list__item {
+    margin-bottom: 3rem;
+}
+.overview-list__item::after {
+    content: '---';
+}

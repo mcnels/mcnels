@@ -1,0 +1,20 @@
+.footer {
+	font-size: 12px;
+	padding-top: 0;
+	margin: 4.5rem 0;
+	display: block;
+}
+
+.footer__left {
+	float: left;
+	width: 60%;
+}
+
+.footer__right {
+	float: left;
+	width: 30%;
+}
+
+.footer .footer__cta {
+	text-align: right;
+}

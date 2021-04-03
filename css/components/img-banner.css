@@ -1,0 +1,22 @@
+.img-banner {
+    min-height: 175px;
+    height: 40vw;
+    background-color: #f8f8ff;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+@media screen and (min-width: 680px) {
+    .img-banner {
+        height: 50vw;
+   }
+}
+.img-banner .bg-tint {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(59, 70, 84, 0.5);
+}
