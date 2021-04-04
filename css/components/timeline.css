@@ -105,7 +105,9 @@
         margin-left: -50px;
        /* Force Hardware Acceleration in WebKit */
         -webkit-transform: translateZ(0);
+        transform: translateZ(0);
         -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
    }
     .cssanimations .cd-timeline-img.is-hidden {
         visibility: hidden;
