@@ -27,6 +27,10 @@
         <link rel="stylesheet" href="css/components/img-banner.css">
         <link rel="stylesheet" href="css/components/link-leader.css">
         <link rel="stylesheet" href="css/components/gallery.css">
+        <link rel="stylesheet" href="css/components/popup.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
         <!-- Touch icons -->
         <link rel="icon" type="image/png" href="favicon.png" />
@@ -145,7 +149,7 @@
                             <!-- cd-timeline-img -->
 
                             <div class="cd-timeline-content">
-                                <h3>Refreshments</h3>
+                                <h3>Refreshments/Pictures</h3>
                                 <h4 class="cd-date for-small">4.30pm</h4>
                                 <p>Enjoy appetizers while we say cheese in the garden.</p>
                             </div>
@@ -302,13 +306,39 @@
                     <!-- <p>Once you receive your invitation, we'd appreciate if you could RSVP by <b>Sunday November 31st, 2021.</b></p> -->
                     <p>If you plan on attending our virtual event or you wish to congratulate us, the quickest way to do so is to click the big purple button below :)</p>
                     <div class="section__cta">
-                        <button class=" button">
+                        <button id="rsvp" class="button" data-toggle="modal" data-target="#myModal">
                             Count Me In!
                         </button>
                     </div>
                     <p>If you have any questions about any of the above, please don't hesitate to pop an email to: <a href="mailto:hi@mcnels.com">
                     hi@mcnels.com</a></p>
                 </section>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <h4 class="modal-title">Thank you so much!</h4>
+                    <center><span id="modalClose" class="close no-select">&times;</span>
+                    <p>
+                        Leave us a message :)
+                    </p>
+                    <fieldset>
+                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                    </fieldset>
+                    <!-- <form>
+                        <label for="fname">Name:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Message:</label><br>
+                        <input type="text" id="msg" name="msg">
+                    </form> -->
+                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button id="closeButton" type="button" class="btn btn-secondary">Close</button></center>
+                </div>
             </div>
 
             <!-- banner 5 -->
@@ -339,6 +369,7 @@
         <script src="js/modules/primary-nav.js"></script>
         <script src="js/modules/timeline-loading.js"></script>
         <script src="js/swipe.js"></script>
+        <script src="js/popup.js"></script>
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
