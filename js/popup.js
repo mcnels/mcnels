@@ -1,8 +1,10 @@
 // Developer Info - Arjun (https://github.com/arjun0108)
+var guests = [""];
 
 $(function(){
     $('#rsvp').on('click', function (event) {
         showModal();
+		popGuests();
 		event.stopPropagation(); 
     });
 	$('#modalClose').on('click', function () {
@@ -39,5 +41,53 @@ $(document).on("click", function () {
 	hideModal();
 });
 
-// @todo if name provided is in list of names, show afterparty page
 // save info in firebase
+var db = firebase.firestore();
+
+function popGuests() {
+	db.collection("afterparty").get()
+	.then(querySnapshot => {
+		querySnapshot.forEach((doc) => {
+			this.guests.push(doc.id);
+		});
+	})
+	.catch(function(error) {
+        console.error("Error writing guests", error);
+     });
+}
+ 
+function storeData() {
+	
+	document.getElementById("submit").disabled = true;
+
+	// Make namefield required
+
+  var inputName = document.getElementById("namefield").value;
+  var inputMsg = document.getElementById("msgfield").value;
+
+  if (inputName == "") {
+    alert("Name must be filled out");
+	document.getElementById("submit").disabled = false;
+    return false;
+  }
+ 
+     db.collection("attendees").doc(inputName).set({
+         Message: inputMsg
+     })
+     .then(function() {
+		 hideModal();
+		 document.getElementById("namefield").value = '';
+		 document.getElementById("msgfield").value = '';
+
+		if (guests.includes(inputName)){
+			window.location.replace("afterparty.html");
+		}
+         console.log("Doc successful");
+     })
+     .catch(function(error) {
+        console.error("Error writing doc", error);
+     });
+
+	 document.getElementById("submit").disabled= false;
+		
+}
