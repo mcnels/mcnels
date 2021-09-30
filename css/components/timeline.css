@@ -1,5 +1,5 @@
 .cd-container {
-    margin: 10rem auto;
+    margin: 5rem auto;
 }
 .cd-date {
     display: block;
@@ -25,6 +25,7 @@
    }
 }
 .cd-container::after {
+    clear: both;
     content: ' ';
     width: 20px;
     height: 4px;
@@ -67,6 +68,8 @@
    }
 }
 .cd-timeline-block {
+    clear: both;
+    display: flow-root;
     position: relative;
     margin: 2em 1em 2em 3em;
     opacity: 0;
@@ -128,6 +131,7 @@
     margin-top: -24px;
 }
 .cd-timeline-content {
+    clear: both;
     position: relative;
     margin-left: 60px;
     padding: 1em 0;
@@ -178,7 +182,7 @@
 }
 .cd-timeline-content .cd-date {
     float: left;
-    padding: 0 0 0.8em;
+    padding: 1.4em 0 0.8em;
     opacity: 0.7;
 }
 @media screen and (min-width: 680px) {
