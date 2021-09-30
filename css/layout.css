@@ -32,6 +32,13 @@ body {
 	position: relative;
 }
 
+.wrapper_last {
+	max-width: 800px;
+	margin: auto;
+	padding: 0 2rem 0;
+	position: relative;
+}
+
 .section__header {
 	margin-bottom: 3rem;
 	text-align: left;

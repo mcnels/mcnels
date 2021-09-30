@@ -1,5 +1,5 @@
 .img-banner {
-    min-height: 375px;
+    min-height: 275px;
     height: 40vw;
     background-color: #f8f8ff;
     background-position: center;
@@ -22,7 +22,7 @@
 }
 
 .img-banner-sp {
-    min-height: 470px;
+    min-height: 320px;
     height: 40vw;
     background-color: #f8f8ff;
     background-position: center;
