@@ -1,6 +1,3 @@
-// import PhotoSwipe from './libs/photoswipe';
-// import PhotoSwipeUI_Default from './libs/photoswipe-ui-default';
-
 // Photoswipe
 var initPhotoSwipeFromDOM = function initPhotoSwipeFromDOM(gallerySelector) {
   var parseThumbnailElements = function parseThumbnailElements(el) {
@@ -197,7 +194,7 @@ var initPhotoSwipeFromDOM = function initPhotoSwipeFromDOM(gallerySelector) {
     } // Pass data to PhotoSwipe and initialize it
 
 
-    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default.default, items, options); // see: http://photoswipe.com/documentation/responsive-images.html
+    gallery = new _photoswipe.default(pswpElement, _photoswipeUiDefault.default, items, options); // see: http://photoswipe.com/documentation/responsive-images.html
 
     var realViewportWidth,
         useLargeImages = false,
