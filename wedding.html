@@ -27,10 +27,7 @@
         <link rel="stylesheet" href="css/components/img-banner.css">
         <link rel="stylesheet" href="css/components/link-leader.css">
         <link rel="stylesheet" href="css/components/gallery.css">
-        <link rel="stylesheet" href="css/components/popup.css">
-
-        <link rel="stylesheet" href="css/vendor/photoswipe/main.css">
-        <link rel="stylesheet" href="css/vendor/photoswipe/default-skin/main.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -118,7 +115,6 @@
             <!-- video highlights -->
             <div class="wrapper" id="video">
                 <h2 class="section__header">The video</h2>
-                <!-- <p>Big thanks to <a href="http://www.bergandgiles.com/" target="_blank">Berg &amp; Giles</a> who blew us away with this highlight reel - it perfectly captures our big day, even the weather worked out for us! ⛅️</p> -->
                 <div class="media-object">
                     <iframe src="https://www.youtube.com/embed/i38GMIc6fk4" frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -139,133 +135,315 @@
                     </noscript>
 
                     <div class="gallery">
-                        <!-- #1 -->
-                        <a class="gallery__item" href="images/m&s/1.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/1.jpg"/>
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/1.jpg">
+                            <img src="images/m&s/1.jpg">
+                        </a>
+                        
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/2.jpg">
+                            <img src="images/m&s/2.jpg">
                         </a>
 
-                        <!-- #2 -->
-                        <a class="gallery__item" href="images/m&s/2.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/2.jpg" alt="" />
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/3.jpg">
+                            <img src="images/m&s/3.jpg">
                         </a>
 
-                        <!-- #3 -->
-                        <a class="gallery__item" href="images/m&s/3.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/3.jpg" alt="" />
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/4.jpg">
+                            <img src="images/m&s/4.jpg">
                         </a>
 
-                        <!-- #4 -->
-                        <a class="gallery__item" href="images/m&s/4.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/4.jpg" alt="" />
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/5.jpg">
+                            <img src="images/m&s/5.jpg">
                         </a>
 
-                        <!-- #5 -->
-                        <a class="gallery__item" href="images/m&s/5.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/5.jpg" alt="" />
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/6.jpg">
+                            <img src="images/m&s/6.jpg">
                         </a>
 
-                        <!-- #6 -->
-                        <a class="gallery__item" href="images/m&s/6.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/6.jpg" alt="" />
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/7.jpg">
+                            <img src="images/m&s/7.jpg">
                         </a>
 
-                        <!-- #7 -->
-                        <a class="gallery__item" href="images/m&s/7.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/7.jpg" alt="" />
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/8.jpg">
+                            <img src="images/m&s/8.jpg">
                         </a>
 
-                        <!-- #8 -->
-                        <a class="gallery__item" href="images/m&s/8.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/8.jpg" alt="" />
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/9.jpg">
+                            <img src="images/m&s/9.jpg">
                         </a>
 
-                        <!-- #9 -->
-                        <a class="gallery__item" href="images/m&s/9.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/9.jpg" alt="" />
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/10.jpg">
+                            <img src="images/m&s/10.jpg">
                         </a>
 
-                        <!-- #10 -->
-                        <a class="gallery__item" href="images/m&s/10.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/10.jpg" alt="" />
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/11.jpg">
+                            <img src="images/m&s/11.jpg">
                         </a>
 
-                        <!-- #11 -->
-                        <a class="gallery__item" href="images/m&s/11.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/11.jpg" alt="" />
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/12.jpg">
+                            <img src="images/m&s/12.jpg">
                         </a>
 
-                        <!-- #12 -->
-                        <a class="gallery__item" href="images/m&s/12.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/12.jpg" alt="" />
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/13.jpg">
+                            <img src="images/m&s/13.jpg">
                         </a>
 
-                        <!-- #13 -->
-                        <a class="gallery__item" href="images/m&s/13.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/13.jpg" alt="" />
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/14.jpg">
+                            <img src="images/m&s/14.jpg">
                         </a>
 
-                        <!-- #14 -->
-                        <a class="gallery__item" href="images/m&s/14.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/14.jpg" alt="" />
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/15.jpg">
+                            <img src="images/m&s/15.jpg">
                         </a>
 
-                        <!-- #15 -->
-                        <a class="gallery__item" href="images/m&s/15.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/15.jpg" alt="" />
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/16.jpg">
+                            <img src="images/m&s/16.jpg">
                         </a>
 
-                        <!-- #16 -->
-                        <a class="gallery__item" href="images/m&s/16.jpg" data-size="1640x1095">
-                            <img src="images/m&s/placeholder.png" data-src="images/m&s/16.jpg" alt="" />
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/17.jpg">
+                            <img src="images/m&s/17.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/18.jpg">
+                            <img src="images/m&s/18.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/19.jpg">
+                            <img src="images/m&s/19.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/20.jpg">
+                            <img src="images/m&s/20.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/21.jpg">
+                            <img src="images/m&s/21.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/22.jpg">
+                            <img src="images/m&s/22.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/23.jpg">
+                            <img src="images/m&s/23.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/24.jpg">
+                            <img src="images/m&s/24.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/25.jpg">
+                            <img src="images/m&s/25.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/26.jpg">
+                            <img src="images/m&s/26.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/27.jpg">
+                            <img src="images/m&s/27.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/28.jpg">
+                            <img src="images/m&s/28.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/29.jpg">
+                            <img src="images/m&s/29.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/30.jpg">
+                            <img src="images/m&s/30.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/31.jpg">
+                            <img src="images/m&s/31.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/32.jpg">
+                            <img src="images/m&s/32.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/33.jpg">
+                            <img src="images/m&s/33.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/34.jpg">
+                            <img src="images/m&s/34.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/35.jpg">
+                            <img src="images/m&s/35.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/36.jpg">
+                            <img src="images/m&s/36.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/37.jpg">
+                            <img src="images/m&s/37.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/38.jpg">
+                            <img src="images/m&s/38.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/39.jpg">
+                            <img src="images/m&s/39.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/40.jpg">
+                            <img src="images/m&s/40.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/41.jpg">
+                            <img src="images/m&s/41.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/42.jpg">
+                            <img src="images/m&s/42.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/43.jpg">
+                            <img src="images/m&s/43.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/44.jpg">
+                            <img src="images/m&s/44.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/45.jpg">
+                            <img src="images/m&s/45.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/46.jpg">
+                            <img src="images/m&s/46.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/47.jpg">
+                            <img src="images/m&s/47.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/48.jpg">
+                            <img src="images/m&s/48.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/49.jpg">
+                            <img src="images/m&s/49.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/50.jpg">
+                            <img src="images/m&s/50.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/51.jpg">
+                            <img src="images/m&s/51.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/52.jpg">
+                            <img src="images/m&s/52.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/53.jpg">
+                            <img src="images/m&s/53.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/54.jpg">
+                            <img src="images/m&s/54.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/55.jpg">
+                            <img src="images/m&s/55.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/56.jpg">
+                            <img src="images/m&s/56.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/57.jpg">
+                            <img src="images/m&s/57.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/58.jpg">
+                            <img src="images/m&s/58.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/59.jpg">
+                            <img src="images/m&s/59.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/60.jpg">
+                            <img src="images/m&s/60.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/61.jpg">
+                            <img src="images/m&s/61.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/62.jpg">
+                            <img src="images/m&s/62.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/63.jpg">
+                            <img src="images/m&s/63.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/64.jpg">
+                            <img src="images/m&s/64.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/65.jpg">
+                            <img src="images/m&s/65.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/66.jpg">
+                            <img src="images/m&s/66.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/67.jpg">
+                            <img src="images/m&s/67.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/68.jpg">
+                            <img src="images/m&s/68.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/69.jpg">
+                            <img src="images/m&s/69.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/70.jpg">
+                            <img src="images/m&s/70.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/71.jpg">
+                            <img src="images/m&s/71.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/72.jpg">
+                            <img src="images/m&s/72.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/73.jpg">
+                            <img src="images/m&s/73.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/74.jpg">
+                            <img src="images/m&s/74.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/75.jpg">
+                            <img src="images/m&s/75.jpg">
+                        </a>
+
+                        <a class="gallery__item" data-fancybox="gallery" href="images/m&s/76.jpg">
+                            <img src="images/m&s/76.jpg">
                         </a>
 
                     </div>
+                    
                 </div>
             </div>
 
-            <div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="pswp__bg"></div>
-            
-                <div class="pswp__scroll-wrap">
-                  <div class="pswp__container">
-                    <div class="pswp__item"></div>
-                    <div class="pswp__item"></div>
-                    <div class="pswp__item"></div>
-                  </div>
-                  <div class="pswp__ui pswp__ui--hidden">
-                    <div class="pswp__top-bar">
-                        <div class="pswp__counter"></div>
-                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                        <button class="pswp__button pswp__button--share" title="Share"></button>
-                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                        <div class="pswp__preloader">
-                            <div class="pswp__preloader__icn">
-                              <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                        <div class="pswp__share-tooltip">
-                            <a href="#" class="pswp__share--facebook"></a>
-                            <a href="#" class="pswp__share--twitter"></a>
-                            <a href="#" class="pswp__share--pinterest"></a>
-                            <a href="#" download class="pswp__share--download"></a>
-                        </div>
-                    </div>
-            
-                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                    <div class="pswp__caption">
-                      <div class="pswp__caption__center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
 
             <div class="wrapper_last">
                 <footer class="footer row">
@@ -279,24 +457,12 @@
             </div>
 
          </div>
-        
-        <script>
-            (function() {
-                var items = document.querySelectorAll('.gallery__item img'), i;
-                for (i = 0; i < items.length; ++i) {
-                  var imgSrc = items[i].getAttribute("data-src");
-                  items[i].setAttribute("src", imgSrc);
-                  items[i].style.border = 0;
-                }
-            })();
-        </script>
+
         <script src="js/libs/zenscroll.js"></script>
         <script src="js/libs/waypoints.js"></script>
-        <script src="js/libs/photoswipe.js"></script>
-        <script src="js/libs/photoswipe-ui-default.js"></script>
         <script src="js/modules/primary-nav.js"></script>
         <script src="js/modules/timeline-loading.js"></script>
-        <script src="js/swipe.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -307,3 +473,5 @@
         </script>
     </body>
 </html>
+
+
